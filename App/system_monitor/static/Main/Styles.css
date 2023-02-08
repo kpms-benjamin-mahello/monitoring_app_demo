@@ -1,0 +1,877 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+:root
+{
+	--Brand1: #076685;
+	--Brand2: #CDE0E7;
+	--Black: #000000;
+	--Dark: #45494c;
+	--Medium: #b9bec1;
+	--Light: #d0d3d5;
+}
+
+body
+{
+	color: var(--Dark);
+	padding: 2% 2%;
+	font-family: Arial;
+	font-size: 11pt;
+}
+
+/* Backmatter */
+
+div.GlossaryPageDefinition
+{
+	font-size: 10pt;
+}
+
+div.GlossaryPageHeading
+{
+	font-size: 21pt;
+	font-weight: normal;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-bottom-color: var(--Medium);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: left;
+	color: inherit;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-right: 10px;
+	background-image: url('../Images/Backmatter-Heading-Background.png');
+	background-repeat: no-repeat;
+}
+
+div.GlossaryPageTerm
+{
+	font-size: 12pt;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+MadCap|glossaryProxy
+{
+	border-top: none;
+}
+
+MadCap|indexProxy
+{
+	border-top: none;
+}
+
+p.Index1
+{
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+p.Index2
+{
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+p.IndexHeading
+{
+	font-size: 21pt;
+	font-weight: normal;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-bottom-color: var(--Medium);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: left;
+	color: inherit;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 12px;
+	padding-right: 10px;
+	background-image: url('../Images/Backmatter-Heading-Background.png');
+	background-repeat: no-repeat;
+}
+
+/* Content */
+
+img
+{
+	border: none;
+	max-width: 100%;
+}
+
+p
+{
+	widows: 3;
+	orphans: 3;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.5em;
+}
+
+p.created-using-flare
+{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+p.table-text
+{
+	font-size: 12pt;
+}
+
+/* Frontmatter */
+
+hr.title-page
+{
+	border: solid 0px transparent;
+	background-color: var(--Light);
+	height: 1px;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 370px;
+}
+
+MadCap|tocProxy
+{
+	border-top: none;
+	margin-right: 0.25in;
+}
+
+p.created-using-flare
+{
+	color: var(--Dark);
+	font-weight: bold;
+	margin-top: 18px;
+	font-size: 9pt;
+	line-height: 15pt;
+	text-transform: uppercase;
+}
+
+p.title
+{
+	margin-top: 30px;
+	mc-hyphenate: never;
+	font-size: 24pt;
+	line-height: 30pt;
+}
+
+p.title-page-footer
+{
+	color: var(--Dark);
+	font-size: 9pt;
+	frame-break-before: always;
+	line-height: 15pt;
+	margin-top: 30px;
+}
+
+p.title-page-url
+{
+	color: var(--Dark);
+	font-size: 9pt;
+	line-height: 15pt;
+}
+
+p.TOC1
+{
+	color: var(--Dark);
+	font-weight: normal;
+	page-break-after: avoid;
+	font-size: 10pt;
+	mc-leader-format: 'dash';
+	line-height: 1.5em;
+}
+
+p.TOC2
+{
+	color: var(--Dark);
+	font-weight: normal;
+	font-size: 10pt;
+	mc-leader-format: 'dash';
+	margin-left: 1cm;
+	line-height: 1.5em;
+}
+
+p.TOC3
+{
+	color: var(--Dark);
+	font-weight: normal;
+	font-size: 10pt;
+	mc-leader-format: 'dash';
+	margin-left: 2cm;
+	line-height: 1.5em;
+}
+
+/* Headings */
+
+h1
+{
+	font-weight: bold;
+	font-size: 24.0pt;
+	color: var(--Brand1);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+	page-break-before: always;
+	page-break-after: avoid;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+	page-break-after: avoid;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+	margin-top: 0;
+	margin-bottom: 1.12em;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+/* Home page topic */
+
+div.home-section
+{
+	padding: 3% 2%;
+	border-bottom: solid 1px var(--Light);
+}
+
+div.home-section:first-of-type	/*Removes padding-top of the first home-section*/
+{
+	padding: 0 2% 3%;
+}
+
+div.home-section:last-of-type	/*Removes bottom border of last home-section*/
+{
+	border-bottom: none;
+}
+
+div.quick-links	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.quick-links::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.quick-links::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.quick-links > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.quick-links > div:nth-child(1)
+{
+	width: 16.66666%;
+	margin-left: 2%;
+}
+
+div.quick-links > div:nth-child(2)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(3)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(4)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(5)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links *	/*Text-align center set to all elements within div.quick-links*/
+{
+	text-align: center;
+}
+
+/* Links */
+
+a
+{
+	color: var(--Brand1);
+}
+
+a:link
+{
+	color: var(--Brand1);
+}
+
+a:visited
+{
+	color: var(--Brand1);
+}
+
+MadCap|dropDown
+{
+	border-bottom: 1px solid var(--Light);
+	mc-image-position: left;
+	mc-image-spacing: 10px;
+	mc-open-image: url('../Images/Minus.png');
+	mc-closed-image: url('../Images/Plus.png');
+	padding: 10px 0;
+	font-size: 12pt;
+}
+
+MadCap|dropDownBody
+{
+	padding: 10px 30px 0;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	color: var(--Dark);
+	font-weight: bold;
+	border-bottom: none;
+	font-size: 12pt;
+}
+
+MadCap|expandingBody
+{
+	color: var(--Dark);
+	font-style: italic;
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: var(--Brand1);
+}
+
+MadCap|xref
+{
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+	color: var(--Brand1);
+}
+
+/* Lists */
+
+li
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+li p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+ol,
+ul
+{
+	letter-spacing: .25;
+	line-height: 20pt;
+}
+
+/* Page layout */
+
+p.frame-footer-page-number
+{
+	color: var(--Medium);
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: right;
+}
+
+p.frame-footer-text
+{
+	color: var(--Medium);
+	font-size: 11pt;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Master page */
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: var(--Dark);
+}
+
+table
+{
+	
+}
+
+p.TOC4
+{
+	font-size: 10pt;
+	mc-leader-format: 'dash';
+	margin-left: 3cm;
+}
+
+p.TOC5
+{
+	font-size: 10pt;
+	mc-leader-format: 'dash';
+	margin-left: 4cm;
+}
+
+p.TOC6
+{
+	font-size: 10pt;
+}
+
+@media only screen and (max-width: 1274px)
+{
+	/* Home page topic */
+
+	div.quick-links > div:nth-child(1)
+	{
+		width: 24%;
+		margin-left: 0%;
+	}
+
+	div.quick-links > div:nth-child(2)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.quick-links > div:nth-child(3)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.quick-links > div:nth-child(4)
+	{
+		width: 24%;
+		margin-left: 19%;
+	}
+
+	div.quick-links > div:nth-child(5)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	p
+	{
+		font-family: Calibri;
+	}
+
+	body
+	{
+		font-family: Calibri;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		font-size: 12pt;
+	}
+}
+
+@media only screen and (max-width: 650px)
+{
+	/* Home page topic */
+
+	div.quick-links > div:nth-child(1)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(2)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.quick-links > div:nth-child(3)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(4)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.quick-links > div:nth-child(5)
+	{
+		width: 49%;
+		margin-left: 25.5%;
+	}
+
+	body
+	{
+		font-family: Calibri;
+	}
+
+	p
+	{
+		font-family: Calibri;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		font-size: 12pt;
+	}
+}
+
+@media print
+{
+	body
+	{
+		font-size: 11pt;
+		line-height: 13pt;
+		margin: 8px;
+	}
+
+	/* Content */
+
+	p
+	{
+		color: #000000;
+		margin-top: 8pt;
+		margin-bottom: 8pt;
+		line-height: 1.5em;
+	}
+
+	p.table-text
+	{
+		font-size: 11pt;
+	}
+
+	/* Headings */
+
+	h1
+	{
+		font-size: 25pt;
+		line-height: 27pt;
+		page-break-before: always;
+		mc-auto-number-format: 'GH:{n+} ';
+		margin-bottom: 8pt;
+		color: #000000;
+	}
+
+	h2
+	{
+		line-height: 23pt;
+		font-weight: normal;
+		page-break-inside: auto;
+		mc-auto-number-format: 'GH:{n}.{n+} ';
+		margin-bottom: 0;
+		font-size: 18 pt;
+		color: #000000;
+		page-break-before: avoid;
+		margin-top: 18pt;
+	}
+
+	h3
+	{
+		font-size: 15pt;
+		font-weight: bold;
+		line-height: 17pt;
+		page-break-inside: auto;
+		mc-auto-number-format: 'GH:{n}.{n}.{n+} ';
+		margin-bottom: 0;
+		color: #000000;
+		page-break-before: auto;
+		page-break-after: avoid;
+		margin-top: 15pt;
+	}
+
+	/* Links */
+
+	MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+
+	h4
+	{
+		page-break-before: auto;
+		page-break-after: auto;
+		page-break-inside: auto;
+		mc-auto-number-format: 'GH:{n}.{n}.{n}.{n+} ';
+		margin-bottom: 0;
+		color: #000000;
+	}
+
+	div.staytogether
+	{
+		page-break-inside: avoid;
+	}
+
+	p.IndexHeading
+	{
+		margin-top: 10px;
+		line-height: 1em;
+		margin-bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 12px;
+		padding-bottom: 20px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #b9bec1;
+	}
+
+	p.Zwischen\0000FCberschrift
+	{
+		font-size: 16pt;
+		font-weight: bold;
+		margin-top: 1.5em;
+		line-height: 1.5em;
+	}
+
+	p.Index1
+	{
+		line-height: 1em;
+	}
+
+	p.Index2
+	{
+		line-height: 1em;
+		margin-left: 0;
+	}
+
+	p.Index3
+	{
+		line-height: 1em;
+		margin-left: 0;
+	}
+
+	div.GlossaryPageHeading
+	{
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	p.example
+	{
+		font-style: italic;
+		page-break-after: avoid;
+		font-weight: normal;
+		margin-top: 1em;
+		line-height: 1.5em;
+	}
+
+	p.TOC1
+	{
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 1.5em;
+		font-size: 11pt;
+		color: #000000;
+	}
+
+	p.TOC2
+	{
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 1.5em;
+		font-size: 11pt;
+		color: #000000;
+	}
+
+	p.TOC3
+	{
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 1.5em;
+		font-size: 11pt;
+		color: #000000;
+	}
+
+	p.TOC4
+	{
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 1.5em;
+		font-size: 11pt;
+	}
+
+	p.TOC5
+	{
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 1.5em;
+		font-size: 11pt;
+	}
+
+	h6
+	{
+		margin-top: 0;
+		margin-bottom: 0;
+		color: #000000;
+	}
+
+	h5
+	{
+		color: #000000;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		color: #000000;
+	}
+
+	MadCap|dropDown
+	{
+		color: #000000;
+		page-break-inside: avoid;
+	}
+
+	MadCap|dropDownBody
+	{
+		color: #000000;
+	}
+
+	MadCap|dropDownHotspot:hover
+	{
+		
+	}
+
+	MadCap|relationshipsHeading
+	{
+		color: #808080;
+	}
+
+	MadCap|relationshipsHeading.concept
+	{
+		margin-bottom: 1em;
+	}
+
+	MadCap|relationshipsProxy
+	{
+		color: #808080;
+		border-top-width: 0px;
+		border-top-color: transparent;
+		margin-bottom: 1em;
+	}
+
+	MadCap|relationshipsItem
+	{
+		color: #808080;
+	}
+
+	MadCap|dropDownHead
+	{
+		page-break-after: Avoid;
+	}
+}
+
+table.Header
+{
+	width: 100%;
+}
+
+table.Footer
+{
+	width: 100%;
+	margin-left: 0;
+	margin-right: auto;
+	caption-side: top;
+	border-bottom-color: #000000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #000000;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-right-color: #000000;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-left-color: #000000;
+	border-left-width: 1px;
+	border-left-style: solid;
+	font-size: 8pt;
+}
+
+div.staytogether
+{
+	
+}
+
+p.Zwischen\0000FCberschrift
+{
+	widows: 3;
+	orphans: 3;
+	font-family: Arial;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 20pt;
+	page-break-after: avoid;
+	line-height: 1.5em;
+	margin-top: 1.5em;
+}
+
+p.example
+{
+	widows: 3;
+	orphans: 3;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.5em;
+}
+

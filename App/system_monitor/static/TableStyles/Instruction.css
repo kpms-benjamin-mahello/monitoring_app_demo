@@ -1,0 +1,52 @@
+/* MadCap Table Style: */
+
+/*<meta />*/
+
+mcTableStyle {
+	name: Instruction; 
+	border-collapse: collapse; 
+	border-left-style: none; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	border-right-style: none; 
+	border-right-width: 1px; 
+	border-right-color: #000000; 
+	border-top-style: none; 
+	border-top-width: 1px; 
+	border-top-color: #000000; 
+	border-bottom-style: none; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+}
+
+mcTableBodyStyle {
+	span: 1; 
+	font-size: 11px; 
+	font-family: Arial; 
+	background-color: #a9a9a9; 
+}
+
+ 
+ 
+/* Cell Styles: */
+ 
+.TableStyle_Instruction
+{
+	border-left-style: none;
+	border-left-color: #000000;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-right-color: #000000;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-top-color: #000000;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-bottom-color: #000000;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-spacing: 0px 0px;
+	mc-cell-padding: 0px 0px 0px 0px;
+}
+
+

@@ -1,0 +1,54 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="configparser" />
+            <item index="1" class="java.lang.String" itemvalue="Flask-MQTT" />
+            <item index="2" class="java.lang.String" itemvalue="paho-mqtt" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E266" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N803" />
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="cv2.waitKey" />
+          <option value="cv2.imshow" />
+          <option value="cv2.resize" />
+          <option value="cv2.destroyAllWindows" />
+          <option value="datetime.now.timestamp" />
+          <option value="datetime.now.strftime" />
+          <option value="cv2.VideoCapture" />
+          <option value="cv2.imwrite" />
+          <option value="str.glob" />
+          <option value="main.Application.destructor" />
+          <option value="main.Application.take_photo" />
+          <option value="cv2.cvtColor" />
+          <option value="cv2.COLOR_BGR2RGB" />
+          <option value="main.ret" />
+          <option value="str.restrip" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title>{{ title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Main/main.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand">
+          <img src="/static/Images/Koerber_Logo_RGB_White5.svg" alt="" width="43" height="43">
+        </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <h3 style="color:white;">System Monitor</h3>
+      </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="{{ url_for('help_page')}}"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+  <div class="center">
+    <h1>
+      System Monitor Home Page
+    </h1>
+    <img
+      src="https://intranet.koerber.de/fileadmin/templates/images/Koerber_Logo_RGB_Black.svg"
+      alt="Logo"
+      style="width: 400px; height: 200px"
+    />
+  </div>
+
+  <div class="homebutton">
+
+      <div class="position-absolute bottom-0 end-0">
+                    <ul class="pager">
+                        <li><a href="{{ url_for('my_system')}}">system</a></li>
+                        <li><a href="{{ url_for('my_docker')}}">docker</a></li>
+                    </ul>
+                </div>
+
+  </div>
+
+    <br />
+  </body>
+</html>
